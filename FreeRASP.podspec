@@ -16,16 +16,16 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/talsec}"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "${USER_NAME}" => "${USER_EMAIL}" }
-  spec.source       = { :http => "https://github.com/martinpristas/talsec-test/raw/master/FreeRASP.zip" }
-  #spec.vendored_frameworks = "Debug/TalsecRuntime.xcframework"
+  spec.source       = { :http => "https://github.com/martinpristas/talsec-test/raw/master/TalsecRuntime.xcframework.zip" }
+  spec.vendored_frameworks = "TalsecRuntime.xcframework"
 
-  spec.subspec 'Debug' do |sp|
-    sp.vendored_frameworks = "Debug/TalsecRuntime.xcframework"
-  end
+  #spec.subspec 'Debug' do |sp|
+  #  sp.vendored_frameworks = "Debug/TalsecRuntime.xcframework"
+  #end
 
-  spec.subspec 'Release' do |sp|
-    sp.vendored_frameworks = "Release/TalsecRuntime.xcframework"
-  end
+  #spec.subspec 'Release' do |sp|
+  #  sp.vendored_frameworks = "Release/TalsecRuntime.xcframework"
+  #end
 
   spec.swift_version = '5.0'
   spec.ios.deployment_target     = '11.0'
