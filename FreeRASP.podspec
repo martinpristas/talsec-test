@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/talsec}"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "${USER_NAME}" => "${USER_EMAIL}" }
-  spec.source       = { :http => "https://github.com/martinpristas/talsec-test/raw/master/TalsecRuntime.xcframework.zip" }
+  spec.source       = { :git => "https://github.com/martinpristas/talsec-test.git" }
   spec.vendored_frameworks = "TalsecRuntime.xcframework"
 
   #spec.subspec 'Debug' do |sp|
